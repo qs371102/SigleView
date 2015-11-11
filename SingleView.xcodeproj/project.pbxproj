@@ -32,6 +32,13 @@
 			remoteGlobalIDString = 56A5D5531BF3727200D552F5;
 			remoteInfo = SingleView;
 		};
+		56A5D5A31BF372BD00D552F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A5D59F1BF372BC00D552F5 /* mylib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56A5D5931BF372BC00D552F5;
+			remoteInfo = mylib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +58,7 @@
 		56A5D5781BF3727200D552F5 /* SingleViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A5D57C1BF3727200D552F5 /* SingleViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleViewUITests.m; sourceTree = "<group>"; };
 		56A5D57E1BF3727300D552F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A5D59F1BF372BC00D552F5 /* mylib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mylib.xcodeproj; path = ../mylib/mylib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,7 @@
 				56A5D5701BF3727200D552F5 /* SingleViewTests */,
 				56A5D57B1BF3727200D552F5 /* SingleViewUITests */,
 				56A5D5551BF3727200D552F5 /* Products */,
+				56A5D59F1BF372BC00D552F5 /* mylib.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +147,14 @@
 				56A5D57E1BF3727300D552F5 /* Info.plist */,
 			);
 			path = SingleViewUITests;
+			sourceTree = "<group>";
+		};
+		56A5D5A01BF372BC00D552F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56A5D5A41BF372BD00D552F5 /* libmylib.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +246,12 @@
 			mainGroup = 56A5D54B1BF3727200D552F5;
 			productRefGroup = 56A5D5551BF3727200D552F5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 56A5D5A01BF372BC00D552F5 /* Products */;
+					ProjectRef = 56A5D59F1BF372BC00D552F5 /* mylib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				56A5D5531BF3727200D552F5 /* SingleView */,
@@ -237,6 +260,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		56A5D5A41BF372BD00D552F5 /* libmylib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmylib.a;
+			remoteRef = 56A5D5A31BF372BD00D552F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		56A5D5521BF3727200D552F5 /* Resources */ = {
